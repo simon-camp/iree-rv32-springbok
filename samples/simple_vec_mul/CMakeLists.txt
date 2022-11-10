@@ -119,7 +119,7 @@ iree_cc_binary(
   DEPS
     ::simple_float_mul_c_module_static_emitc
     ::simple_float_mul_c_module_static_lib
-    samples::util::util_static
+    samples::util::util_static_inline
   LINKOPTS
     "LINKER:--defsym=__stack_size__=20k"
   COPTS
@@ -180,7 +180,7 @@ iree_cc_binary(
   DEPS
     ::simple_int_mul_c_module_static_emitc
     ::simple_int_mul_c_module_static_lib
-    samples::util::util_static
+    samples::util::util_static_inline
   LINKOPTS
     "LINKER:--defsym=__stack_size__=20k"
   COPTS

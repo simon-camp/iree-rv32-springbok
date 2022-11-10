@@ -115,6 +115,7 @@ function(springbok_modules)
     FLAGS
       ${_RULE_FLAGS}
     "${_RVV_OFF_ARG}"
+    "${_INLINE_HAL_ARG}"
     EMITC
     DEPENDS
       "${_INPUT_FILENAME}"
@@ -146,6 +147,7 @@ function(springbok_modules)
       EMITC
       DEPENDS
         "${_INPUT_FILENAME}"
+      # "${_INLINE_HAL_ARG}"
     )
   endif()
 endfunction()
